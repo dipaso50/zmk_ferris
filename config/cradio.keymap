@@ -24,7 +24,7 @@
         td0: tap_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "tap_esc";
-            #binding-cells = <0>;
+            "#binding-cells" = <0>;
             tapping-term-ms = <230>;
             bindings = <&kp Q>, <&kp ESC>;
         };
