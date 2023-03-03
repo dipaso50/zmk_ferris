@@ -153,16 +153,16 @@
        multimedia_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│    1     │  2       │  3       │  4       │  5       │   │          │          │          │          │          │
-             &kp N1     &kp N2    &kp N3      &kp N4     &kp N5         &trans     &trans     &trans     &trans     &trans
+        //│          │          │          │          │          │   │          │          │          │          │          │
+            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  6       │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-            &kp N6     &kp N7    &kp N8      &kp N9     &kp N0          &trans     &trans     &trans     &trans     &trans
+        //│          │          │          │          │          │   │ VOL DOWN │ VOL UP   │          │          │          │
+             &trans     &trans     &trans     &trans     &trans       &kp K_VOL_DN &kp K_VOL_UP &trans   &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│     +    │    -     │    ,     │    .     │    =     │   │          │          │          │          │          │
-           &kp ES_PLUS  &kp ES_MINS  &kp COMMA  &kp DOT  &kp ES_EQL      &trans     &trans     &trans     &trans     &trans
+        //│          │          │          │          │          │   │  MUTE    │          │          │          │          │
+            &trans     &trans     &trans     &trans     &trans        &kp K_MUTE   &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp ES_ASTR  &kp ES_SLSH    &trans     &trans
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
