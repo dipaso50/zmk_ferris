@@ -73,7 +73,7 @@
     &kp ES_AMPR &kp ES_LCBR  &kp ES_RCBR  &kp ES_SLSH  &kp ES_BSLS    &kp F6      &kp F7     &kp F8     &kp F9    &kp F10
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│    @     │  [       │    ]     │  *       │  =       │   │    F11   │    F12   │ PRSCRN   │  PRSCRN  │          │
-    &kp ES_AT  &kp ES_LBRC  &kp ES_RBRC  &kp ES_ASTR  &kp ES_EQL      &kp F11      &kp F12  &kp CAPP    &kp CPYP   &trans 
+    &kp ES_AT  &kp ES_LBRC  &kp ES_RBRC  &kp ES_ASTR  &kp ES_EQL      &kp F11      &kp F12   CAPP        CPYP       &trans 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &kp ES_PIPE  &kp ES_PERC     &trans     &trans    
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -84,13 +84,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │GENERATE  │IMPORTS   │ RENAME   │ DELETE   │   │  HOME    │ PG DOWN  │ PG UP    │  END     │          │
-            &trans   &kp GENER   &kp IMPORT  &kp RENAME &kp DEL        &kp HOME  &kp PG_DN  &kp PG_UP   &kp END    &trans
+            &trans     GENER      IMPORT     RENAME     &kp DEL        &kp HOME  &kp PG_DN  &kp PG_UP   &kp END    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │CAPS LOCK │   │  LEFT    │  DOWN    │   UP     │   RIGH   │ INSERT   │
             &trans     &trans     &trans     &trans     &kp CAPS      &kp LEFT   &kp DOWN    &kp UP    &kp RIGHT   &kp INS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │ SEARCH   │ OPEN     │ COMPILE  │          │   │          │          │  ;       │  :       │          │
-            &trans    &kp SEARCH  &kp OPEN   &kp COMPI    &trans      &trans      &trans    &kp ES_SCLN &kp ES_COLN &kp LC(ES_UNDS)
+        //│          │ SEARCH   │  OPEN    │ COMPILE  │          │   │          │          │  ;       │  :       │          │
+            &trans     SEARCH      OPEN       COMPI     &trans         &trans      &trans    &kp ES_SCLN &kp ES_COLN &kp LC(ES_UNDS)
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
