@@ -10,10 +10,10 @@
 #define HRML(k1,k2,k3,k4) &ht LCTRL k1  &ht LGUI k2  &ht LALT k3  &ht LSHFT k4
 #define HRMR(k1,k2,k3,k4) &ht RSHFT k1  &ht RALT k2  &ht RGUI k3  &ht RCTRL k4
 
-#define KC_CAPW LGUI(LSFT(&kp N3)) // Capture whole screen 
-#define KC_CPYW LGUI(LSFT(LCTL(&kp N3))) // Copy whole screen 
-#define KC_CAPP LGUI(LSFT(&kp N4)) // Capture portion of screen   
-#define KC_CPYP LGUI(LSFT(LCTL(&kp N4))) // Copy portion of screen
+#define KC_CAPW &kp LG(LS(N3)) // Capture whole screen 
+#define KC_CPYW &kp LG(LS(LC(N3))) // Copy whole screen 
+#define KC_CAPP &kp LG(LS(N4)) // Capture portion of screen   
+#define KC_CPYP &kp LG(LS(LC(N4))) // Copy portion of screen
 
 / {
     behaviors {
