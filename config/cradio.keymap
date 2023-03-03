@@ -21,12 +21,12 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-        td0: tap_dance_0 {
+        td0: tap_dance {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
+            label = "tap_esc";
             #binding-cells = <0>;
             tapping-term-ms = <230>;
-            bindings =  <&kp Q>, <&kp ESC>;
+            bindings = <&kp Q>, <&kp ESC>;
         };
     };
 
