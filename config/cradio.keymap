@@ -84,7 +84,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │GENERATE  │IMPORTS   │ RENAME   │ DELETE   │   │  HOME    │ PG DOWN  │ PG UP    │  END     │          │
-            &trans     GENER      IMPORT     RENAME     &kp DEL        &kp HOME  &kp PG_DN  &kp PG_UP   &kp END    &trans
+            &trans     GENER      IMPOR      RENAME     &kp DEL        &kp HOME  &kp PG_DN  &kp PG_UP   &kp END    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │CAPS LOCK │   │  LEFT    │  DOWN    │   UP     │   RIGH   │ INSERT   │
             &trans     &trans     &trans     &trans     &kp CAPS      &kp LEFT   &kp DOWN    &kp UP    &kp RIGHT   &kp INS
