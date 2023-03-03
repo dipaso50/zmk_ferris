@@ -10,6 +10,11 @@
 #define HRML(k1,k2,k3,k4) &ht LCTRL k1  &ht LGUI k2  &ht LALT k3  &ht LSHFT k4
 #define HRMR(k1,k2,k3,k4) &ht RSHFT k1  &ht RALT k2  &ht RGUI k3  &ht RCTRL k4
 
+#define KC_CAPW LGUI(LSFT(&kp N3)) // Capture whole screen 
+#define KC_CPYW LGUI(LSFT(LCTL(&kp N3))) // Copy whole screen 
+#define KC_CAPP LGUI(LSFT(&kp N4)) // Capture portion of screen   
+#define KC_CPYP LGUI(LSFT(LCTL(&kp N4))) // Copy portion of screen
+
 / {
     behaviors {
         ht: hold_tap {
@@ -54,16 +59,16 @@
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│    #     │  (       │    )     │  <       │   >      │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-    &kp ES_HASH &kp ES_LPRN &kp ES_RPRN &kp ES_LABK &kp ES_RABK         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
+        //│    #     │  (       │    )     │  <       │   >      │   │   F1     │    F2    │   F3     │    F4    │   F5     │
+    &kp ES_HASH &kp ES_LPRN &kp ES_RPRN &kp ES_LABK &kp ES_RABK       &kp F1      &kp F2     &kp F3     &kp F4    &kp F5
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│    &     │   {      │    }     │  /       │    \     │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
-    &kp ES_AMPR &kp ES_LCBR  &kp ES_RCBR  &kp ES_SLSH  &kp ES_BSLS        &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SEMI
+        //│    &     │   {      │    }     │  /       │    \     │   │   F6     │    F7    │   F8     │    F9    │   F10    │
+    &kp ES_AMPR &kp ES_LCBR  &kp ES_RCBR  &kp ES_SLSH  &kp ES_BSLS    &kp F6      &kp F7     &kp F8     &kp F9    &kp F10
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│    @     │  [       │    ]     │  *       │  =       │   │          │          │          │          │          │
-    &kp ES_AT  &kp ES_LBRC  &kp ES_RBRC  &kp ES_ASTR  &kp ES_EQL         &trans     &trans     &trans     &trans     &trans
+        //│    @     │  [       │    ]     │  *       │  =       │   │    F11   │    F12   │ PRSCRN   │  PRSCRN  │          │
+    &kp ES_AT  &kp ES_LBRC  &kp ES_RBRC  &kp ES_ASTR  &kp ES_EQL      &kp F11      &kp F12  &kp KC_CAPP &kp KC_CPYP   &trans 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &kp ES_PIPE  &kp ES_PERC        &trans     &trans    
+                                            &kp ES_PIPE  &kp ES_PERC     &trans     &trans    
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
