@@ -27,9 +27,11 @@
 #define KUT &kp RG(X) //cut
 #define NDO &kp RG(Z) //undo
 
-#define CNTP &kp RG(T) //chrome new tap
-#define CRLT &kp RG(R) //chrome reload tap
-#define CCTP &kp RG(W) //chrome close tap
+#define CNTP &kp RG(T) 
+#define CRLT &kp RG(R) 
+#define CCTP &kp RG(W)  
+
+
 
 / {
     behaviors {
