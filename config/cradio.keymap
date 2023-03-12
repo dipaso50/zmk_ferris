@@ -22,10 +22,10 @@
 #define SEARCH &kp LS(LG((R)))
 #define OPEN &kp LG(O)
 
-#define CPY &kp RG(C) //copy
-#define PST &kp RG(V) //paste
-#define KUT &kp RG(X) //cut
-#define NDO &kp RG(Z) //undo
+#define COPIE &ht RG(C) C //copy
+#define PAZT &ht RG(V) V //paste
+#define KUT &ht RG(X) X //cut
+#define UNNDO &ht RG(Z) Z //undo
 
 #define CNTP &ht RG(T) T //chrome new tap
 #define CRLT &ht RG(R) R //chrome reloat tab
@@ -67,7 +67,7 @@
             HRML(A,        S,         D,         F)     &lt 5 G        &lt 4 H    HRMR(J,        K,         L,        BSPC)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ - _       │
-           &kp Z      &kp  X     &kp  C     &kp  V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ES_MINS
+            UNNDO      KUT         COPIE      PAZT      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ES_MINS
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &ht RGUI TAB &lt 2 SPACE   &lt 1 ENTER  &sk RGUI
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
