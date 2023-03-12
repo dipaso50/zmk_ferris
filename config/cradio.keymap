@@ -27,9 +27,9 @@
 #define KUT &kp RG(X) //cut
 #define NDO &kp RG(Z) //undo
 
-#define NTP &kp RG(T) //chrome new tap
-#define RLT &kp RG(R) //chrome reload tap
-#define CTP &kp RG(W) //chrome close tap
+#define CNTP &kp RG(T) //chrome new tap
+#define CRLT &kp RG(R) //chrome reload tap
+#define CCTP &kp RG(W) //chrome close tap
 
 / {
     behaviors {
@@ -59,7 +59,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q ESC   │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-            &ht ESC Q &kp W        &kp E     &kp R    &lt 6 T          &kp Y      &kp U      &kp I      &kp O      &kp P
+           &ht ESC Q &ht CCTP W   &kp E     &ht CRLT R  &lt 6 T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ BSPC     │
             HRML(A,        S,         D,         F)     &lt 5 G        &lt 4 H    HRMR(J,        K,         L,        BSPC)
